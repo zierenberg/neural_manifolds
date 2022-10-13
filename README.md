@@ -12,3 +12,8 @@ conda create -n neural_manifolds python=3.10
 conda activate neural_manifolds
 pip install requirements.txt
 ```
+
+Install pre-commit hook:
+```bash
+pre-commit install
+``` 

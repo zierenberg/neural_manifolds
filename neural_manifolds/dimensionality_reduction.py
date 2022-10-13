@@ -1,4 +1,6 @@
 import sklearn.decomposition
+import sklearn.manifold
+
 
 def PCA(signal):
     """
@@ -19,3 +21,20 @@ def PCA(signal):
     pca = sklearn.decomposition.PCA()
     pca.fit(signal)
     return pca.explained_variance_ratio_, pca
+
+
+def LLE(signal, n_neighbors=12, n_components=2):
+    """
+    Locally_linear_embedding
+
+    Parameters
+    ----------
+
+    Returns
+    -------
+    """
+    lle = sklearn.manifold.LocallyLinearEmbedding(
+        n_components=n_components, n_neighbors=n_neighbors
+    )
+    lle.fit(signal)
+    return lle.embedding_, lle

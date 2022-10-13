@@ -16,7 +16,7 @@ def inhomogenous_poisson_spikes(rates, dt):
 
     Returns
     -------
-    signals : 2D array, shape (n_components, n_measurements)
+    signals : 2D array, shape (id_neuron, time_spike)
     """
     # start with empty array
     rates = np.array(rates)
