@@ -1,7 +1,7 @@
 from ..utils import set_seed
 import numpy as np
 
-from .latent_model import LatentModel
+from .latent import LatentModel
 
 
 @set_seed()

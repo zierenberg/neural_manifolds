@@ -17,3 +17,11 @@ Install pre-commit hook:
 ```bash
 pre-commit install
 ``` 
+
+
+## Artificial data
+
+To validate different dimensionality reduction methods, we generate artificial data.
+Genrally we can divide the process into four steps. We create an underlying latent model (1). This model is than used to generate rates (2). From the rates we generate spikes (3). Finally, we subsample from the spikes to generate signals (4).
+
+To see an general example of this see Notebook `notebooks/artificial_data.ipynb`.
